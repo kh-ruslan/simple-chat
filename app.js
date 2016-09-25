@@ -13,7 +13,7 @@ io.on('connection', (socket) => {
 
 io.on('connection', (socket) => {
   socket.on('chat message', (msg) => {
-    io.emit('chat message', msg)
+    socket.broadcast.emit('chat message', msg)
   })
 })
 
