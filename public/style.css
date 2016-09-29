@@ -9,9 +9,9 @@ html {
 }
 
 body {
-    font: 13px Helvetica, Arial;
     background-color: #f0f3f7;
     height: 100%;
+    font: 13px 'Lato', sans-serif;
 }
 
 ul {
