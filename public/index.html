@@ -7,16 +7,41 @@
 </head>
 
 <body>
-    <div class="chat-container">
-        <ul id="messages"></ul>
-        <form action="">
-            <input id="m" autocomplete="off" />
-            <button>Send</button>
-        </form>
+    <div class="modal">
+        <div class="modal-content">
+            <h1>Enter name</h1>
+            <form action="" id="name">
+                <input id="name-input" autocomplete="off" maxlength="25" autofocus>
+                <button>Done</button>
+            </form>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Users online</h2>
+            <ul id="online"></ul>
+            <h3>Wallpaper:</h3>
+            <select id='bg-select'>
+                <option value="/images/0-75.png">Sky</option>
+                <option value="/images/05lvu.jpg">Yellow</option>
+                <option value="/images/background-pattern-030.gif">Skulls</option>
+                <option value="/images/ocean_friends_pattern_by_pronouncedyou-d5baaay.jpg">Ocean</option>
+                <option value="/images/tumblr_mbddx2EaKd1r6dftgo1_1280.png">WTF?</option>
+            </select>
+        </div>
+        <div class="chat-container">
+            <div class="chat-area">
+                <ul id="messages"></ul>
+            </div>
+            <form action="" id="text">
+                <input id="m" autocomplete="off" />
+                <button>Send</button>
+            </form>
+        </div>
     </div>
 </body>
-<script src="http://localhost:3000/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://localhost:3000/socket.io/socket.io.js"></script>
 <script src="main.js" type="text/javascript"></script>
 
 </html>
